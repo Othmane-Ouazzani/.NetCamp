@@ -1,5 +1,5 @@
 ﻿DotNetTraining
-1.0.0.0
+
 
 winexe
 C#
@@ -12,7 +12,7 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\oouazzanitouhami\source\repos\DotNetTraining\DotNetTraining\App.xaml
 7-1978739649
 
-10-1468842450
+6-485609034
 198-294894759
 MainWindow.xaml;Views\LoginView.xaml;Views\RegisterView.xaml;Views\Styles\BorderStyle.xaml;Views\Styles\ButtonStyle.xaml;Views\Styles\TextBlockStyle.xaml;Views\Styles\TextBoxStyle.xaml;
 
