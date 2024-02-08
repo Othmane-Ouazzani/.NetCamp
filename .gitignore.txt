@@ -1,0 +1,1 @@
+.vs/DotNetTraining/FileContentIndex/*.vsidx
