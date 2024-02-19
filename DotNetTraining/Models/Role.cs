@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace DotNetTraining.Models
 {
-    class Role
+    public class Role
     {
-        private string Name { get; set; }
-        private string Description { get; set; }
+        [Key]
+        public string Id { get; set; }
+        [Required]
+        public string Name { get; set; }
+        public string Description { get; set; }
         public Role() { }
         public Role(string name, string description)
         {

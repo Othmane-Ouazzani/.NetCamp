@@ -53,7 +53,7 @@ namespace DotNetTraining.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DotNetTraining;V1.0.0.0;component/views/registerview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DotNetTraining;component/views/registerview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\RegisterView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

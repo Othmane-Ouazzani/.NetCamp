@@ -1,29 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System.Collections;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DotNetTraining.Models
 {
-    class User
+    public class User
     {
-        
-        private string Id { get; set; }
-        
-        private string FirstName { get; set; }
-        
-        private string LasttName { get; set; }
-        
-        private string Password { get; set; }
-        
-        private string Email { get; set; }
+        [Key]
+        public string Id { get; set; }
+        [Required]
+        [MaxLength (50)]
+        public string FirstName { get; set; }
+        [MaxLength(50)]
+        [Required]
+        public string LastName { get; set; }
+        [Required]
+        public string Password { get; set; }
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
 
-        private Role role { get; set; }
+        public ICollection<Role> roles { get; set; }
 
-       
-       
+        public User(string id, string firstName, string lastName, string password, string email)
+        {
+            Id = id;
+            FirstName = firstName;
+            LastName = lastName;
+            Password = password;
+            Email = email;
+            this.roles =new List<Role>();
+        }
     }
 }
