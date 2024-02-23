@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "a7mLFwqdySQyVviGipWJhggsJ6CJKO79otbsxUdm4Oixy8dn+0krfpCucpKKYP6MbjgcGc0za6U6gfDaHDh//w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\oouazzanitouhami\\source\\repos\\DotNetTraining\\MaterialDesign\\MaterialDesign.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\showmethexaml\\2.0.0\\showmethexaml.2.0.0.nupkg.sha512",
+    "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\showmethexaml.msbuild\\2.0.0\\showmethexaml.msbuild.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

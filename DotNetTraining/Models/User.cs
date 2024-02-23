@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DotNetTraining.Models
 {
     public class User
     {
         [Key]
-        public string Id { get; set; }
+        public Guid Id { get; set; }
         [Required]
         [MaxLength (50)]
         public string FirstName { get; set; }
@@ -19,16 +20,18 @@ namespace DotNetTraining.Models
         [EmailAddress]
         public string Email { get; set; }
 
-        public ICollection<Role> roles { get; set; }
+        public ICollection<UserRole> roles { get; set; }
 
-        public User(string id, string firstName, string lastName, string password, string email)
+        public User(Guid Id, string firstName, string lastName, string password, string email)
         {
-            Id = id;
+            this.Id = Id;
             FirstName = firstName;
             LastName = lastName;
             Password = password;
             Email = email;
-            this.roles =new List<Role>();
+            this.roles = new List<UserRole>();
         }
+
+      
     }
 }

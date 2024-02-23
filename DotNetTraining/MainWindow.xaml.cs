@@ -16,9 +16,16 @@ namespace DotNetTraining
     /// </summary>
     public partial class MainWindow : Window
     {
+        //inject IUserRepository
+
         public MainWindow()
         {
             InitializeComponent();
+            
+
+
+
+
         }
     }
 }

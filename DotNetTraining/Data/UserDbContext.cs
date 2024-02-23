@@ -14,7 +14,9 @@ namespace DotNetTraining.Data
             optionsBuilder.UseSqlServer(connectionString);
         }
 
-        public DbSet<User> Users { get; set; }
-        public DbSet<Role> Roles { get; set; }
+
+    
+
+
     }
 }
