@@ -1,12 +1,22 @@
 ﻿<Window x:Class="MaterialDesign.Window1"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MaterialDesign"
-        mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
-    <Grid>
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         
+        Title=" Page" Height="700" Width="600">
+    <Grid>
+        <materialDesign:Card Padding="20" Margin="70" VerticalAlignment="Center" materialDesign:ThemeAssist.Theme="Light">
+            <StackPanel>
+                <TextBlock  Text="Welcome" Style="{StaticResource MaterialDesignHeadline6TextBlock}" HorizontalAlignment="Center" Margin=" 0 40 0 0"/>
+                <TextBox materialDesign:HintAssist.Hint="Username" Margin="0 0 0 8"/>
+<PasswordBox materialDesign:HintAssist.Hint="Password" Margin="0 0 0 8" Password=""/>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                    <Button HorizontalAlignment="Center" Content="Login" Style="{StaticResource MaterialDesignFlatSecondaryDarkBgButton}" Margin="0 0 10 0"/>
+                    <Button HorizontalAlignment="Center" Content="Register" Style="{StaticResource MaterialDesignRaisedButton}" Margin="0 10 10 0"/>
+                </StackPanel>
+                <TextBlock HorizontalAlignment="Center" Text="Don't have an account? " Margin="0 10"/>
+                <TextBlock HorizontalAlignment="Center" Text="Register here" TextDecorations="Underline" Cursor="Hand" Margin="0 0 0 10"/>
+            </StackPanel>
+        </materialDesign:Card>
     </Grid>
 </Window>

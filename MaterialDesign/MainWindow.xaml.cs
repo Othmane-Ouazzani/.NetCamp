@@ -19,6 +19,14 @@ namespace MaterialDesign
         public MainWindow()
         {
             InitializeComponent();
+
+            ItemsListView.ItemsSource = new[]
+       {
+            new { Code = "001", Name = "Item 1", Description = "Description 1" },
+            new { Code = "002", Name = "Item 2", Description = "Description 2" },
+            new { Code = "003", Name = "Item 3", Description = "Description 3" }
+        };
+
         }
     }
 }

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\oouazzanitouhami\source\repos\DotNetTraining\DotNetTraining\App.xaml
-7-1978739649
+3-1598562575
 
-23953304416
+252018523524
 245-604815994
-MainWindow.xaml;Views\LoginView.xaml;Views\RegisterView.xaml;Views\Styles\BorderStyle.xaml;Views\Styles\ButtonStyle.xaml;Views\Styles\TextBlockStyle.xaml;Views\Styles\TextBoxStyle.xaml;
+MainWindow.xaml;Views\LoginView.xaml;Views\RegisterView.xaml;
 
-False
+True
 
