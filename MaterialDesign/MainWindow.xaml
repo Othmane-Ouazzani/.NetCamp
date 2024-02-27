@@ -6,21 +6,95 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Window.Resources>
+    <!--<Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml" />
-                <!-- Additional resource dictionaries if needed -->
+                --><!-- Additional resource dictionaries if needed --><!--
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-    </Window.Resources>
+    </Window.Resources>-->
     
     <Grid>
+
+        <Menu>
+            <MenuItem
+    Header="_File">
+                <MenuItem
+      Header="Save"
+      Icon="{materialDesign:PackIcon Kind=ContentSave}" />
+                <MenuItem
+      Header="Save As.." />
+                <MenuItem
+      Header="Exit"
+      Icon="{materialDesign:PackIcon Kind=ExitToApp}"
+      InputGestureText="Ctrl+E" />
+                <Separator />
+                <MenuItem
+      Header="Excellent"
+      IsCheckable="True"
+      IsChecked="True" />
+                <MenuItem
+      Header="Rubbish"
+      IsCheckable="True" />
+                <MenuItem
+      Header="Dig Deeper"
+      InputGestureText="Ctrl+D">
+                    <MenuItem
+        Header="Enlightenment?"
+        IsCheckable="True" />
+                    <MenuItem
+        Header="Disappointment"
+        IsCheckable="True" />
+                </MenuItem>
+                <MenuItem
+      Header="Look Deeper"
+      InputGestureText="Ctrl+D">
+                    <MenuItem
+        Header="Plain" />
+                    <MenuItem
+        Header="Ice Cream" />
+                </MenuItem>
+            </MenuItem>
+            <MenuItem
+    Header="_Edit">
+                <MenuItem
+      Command="Cut"
+      Header="_Cut"
+      Icon="{materialDesign:PackIcon Kind=ContentCut}" />
+                <MenuItem
+      Command="Copy"
+      Header="_Copy"
+      Icon="{materialDesign:PackIcon Kind=ContentCopy}" />
+                <MenuItem
+      Command="Paste"
+      Header="_Paste"
+      Icon="{materialDesign:PackIcon Kind=ContentPaste}" />
+            </MenuItem>
+        </Menu>
         <materialDesign:Card Margin="16">
             <StackPanel Margin="16">
-                <TextBlock Text="Items" Style="{StaticResource MaterialDesignHeadline6TextBlock}" Margin="0 0 0 16"/>
+                <materialDesign:ColorZone
+  Padding="16"
+  materialDesign:ElevationAssist.Elevation="Dp4"
+  ClipToBounds="False"
+  CornerRadius="10"
+  Mode="PrimaryDark">
+                    <StackPanel
+    Orientation="Horizontal">
+                        <ToggleButton
+      Style="{StaticResource MaterialDesignHamburgerToggleButton}" />
+                        <TextBlock
+      Margin="16,0,0,0"
+      VerticalAlignment="Center"
+      Text="Material Design In XAML Toolkit" />
+                    </StackPanel>
+                </materialDesign:ColorZone>
+                <ToggleButton x:Name="DarkModeToggle"
+                  Checked="DarkModeToggle_Checked"
+                   Unchecked="DarkModeToggle_Checked"/>
 
-                <ListView x:Name="ItemsListView">
+                <ListView x:Name="ItemsListView" Width="600" Height="200">
                     <ListView.View>
                         <GridView>
                             <GridViewColumn Header="Code">
@@ -58,7 +132,10 @@
                         </GridView>
                     </ListView.View>
                 </ListView>
+                
+                
             </StackPanel>
         </materialDesign:Card>
     </Grid>
+    
 </Window>

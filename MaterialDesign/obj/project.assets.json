@@ -674,19 +674,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\": {}
+    "C:\\Users\\Othmane\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oouazzanitouhami\\source\\repos\\DotNetTraining\\MaterialDesign\\MaterialDesign.csproj",
+      "projectUniqueName": "C:\\Users\\Othmane\\Source\\Repos\\.NetCamp\\MaterialDesign\\MaterialDesign.csproj",
       "projectName": "MaterialDesign",
-      "projectPath": "C:\\Users\\oouazzanitouhami\\source\\repos\\DotNetTraining\\MaterialDesign\\MaterialDesign.csproj",
-      "packagesPath": "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oouazzanitouhami\\source\\repos\\DotNetTraining\\MaterialDesign\\obj\\",
+      "projectPath": "C:\\Users\\Othmane\\Source\\Repos\\.NetCamp\\MaterialDesign\\MaterialDesign.csproj",
+      "packagesPath": "C:\\Users\\Othmane\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Othmane\\Source\\Repos\\.NetCamp\\MaterialDesign\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\oouazzanitouhami\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Othmane\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

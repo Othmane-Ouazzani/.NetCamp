@@ -4535,19 +4535,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\": {}
+    "C:\\Users\\Othmane\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oouazzanitouhami\\source\\repos\\DotNetTraining\\DotNetTraining\\DotNetTraining.csproj",
+      "projectUniqueName": "C:\\Users\\Othmane\\Source\\Repos\\.NetCamp\\DotNetTraining\\DotNetTraining.csproj",
       "projectName": "DotNetTraining",
-      "projectPath": "C:\\Users\\oouazzanitouhami\\source\\repos\\DotNetTraining\\DotNetTraining\\DotNetTraining.csproj",
-      "packagesPath": "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oouazzanitouhami\\source\\repos\\DotNetTraining\\DotNetTraining\\obj\\",
+      "projectPath": "C:\\Users\\Othmane\\Source\\Repos\\.NetCamp\\DotNetTraining\\DotNetTraining.csproj",
+      "packagesPath": "C:\\Users\\Othmane\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Othmane\\Source\\Repos\\.NetCamp\\DotNetTraining\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\oouazzanitouhami\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Othmane\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

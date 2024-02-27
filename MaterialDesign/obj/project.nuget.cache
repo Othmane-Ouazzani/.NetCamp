@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "zgmds+jEiUFs3v4GcfSfi8+0LuHrpzBlxeBXhBPuqBMCVi1yRHZzqFoJkwrCq2CayglU5zVFapQZx4HNrn28+w==",
+  "dgSpecHash": "6sYJcaiPKbWXbcA5F3/vY+/76YV31xjXsoNH/Z3ogSrJ+Mrl2dxcdcX6z2HJfSGGSkhkuaneBO1Rp90DRhVXnA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\oouazzanitouhami\\source\\repos\\DotNetTraining\\MaterialDesign\\MaterialDesign.csproj",
+  "projectFilePath": "C:\\Users\\Othmane\\source\\repos\\.NetCamp\\MaterialDesign\\MaterialDesign.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\avalonia\\11.0.9\\avalonia.11.0.9.nupkg.sha512",
-    "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\avalonia.buildservices\\0.0.29\\avalonia.buildservices.0.0.29.nupkg.sha512",
-    "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\avalonia.remote.protocol\\11.0.9\\avalonia.remote.protocol.11.0.9.nupkg.sha512",
-    "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
-    "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
-    "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
-    "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
-    "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\showmethexaml\\2.0.0\\showmethexaml.2.0.0.nupkg.sha512",
-    "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\showmethexaml.msbuild\\2.0.0\\showmethexaml.msbuild.2.0.0.nupkg.sha512",
-    "C:\\Users\\oouazzanitouhami\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512"
+    "C:\\Users\\Othmane\\.nuget\\packages\\avalonia\\11.0.9\\avalonia.11.0.9.nupkg.sha512",
+    "C:\\Users\\Othmane\\.nuget\\packages\\avalonia.buildservices\\0.0.29\\avalonia.buildservices.0.0.29.nupkg.sha512",
+    "C:\\Users\\Othmane\\.nuget\\packages\\avalonia.remote.protocol\\11.0.9\\avalonia.remote.protocol.11.0.9.nupkg.sha512",
+    "C:\\Users\\Othmane\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\Othmane\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\Othmane\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
+    "C:\\Users\\Othmane\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\Othmane\\.nuget\\packages\\showmethexaml\\2.0.0\\showmethexaml.2.0.0.nupkg.sha512",
+    "C:\\Users\\Othmane\\.nuget\\packages\\showmethexaml.msbuild\\2.0.0\\showmethexaml.msbuild.2.0.0.nupkg.sha512",
+    "C:\\Users\\Othmane\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

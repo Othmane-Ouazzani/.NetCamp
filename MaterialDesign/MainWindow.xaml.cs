@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using MaterialDesignThemes.Wpf;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -27,6 +28,23 @@ namespace MaterialDesign
             new { Code = "003", Name = "Item 3", Description = "Description 3" }
         };
 
+        }
+
+        private void DarkModeToggle_Checked(object sender, RoutedEventArgs e)
+        {
+            PaletteHelper palette = new PaletteHelper();
+
+            ITheme theme = palette.GetTheme();
+
+            if (DarkModeToggle.IsChecked.Value)
+            {
+                theme.SetBaseTheme(Theme.Dark);
+            }
+            else
+            {
+                theme.SetBaseTheme(Theme.Light);
+            }
+            palette.SetTheme(theme);
         }
     }
 }
