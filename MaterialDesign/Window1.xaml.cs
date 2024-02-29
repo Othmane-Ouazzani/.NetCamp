@@ -30,7 +30,7 @@ namespace MaterialDesign
         {
 
             ITheme theme = _paletteHelper.GetTheme();
-            theme.SetPrimaryColor(System.Windows.Media.Color.FromRgb(200, 0, 0)); //red
+            theme.SetPrimaryColor(System.Windows.Media.Color.FromRgb(200, 200, 0)); //red
             theme.SetSecondaryColor(System.Windows.Media.Color.FromRgb(0, 200, 0)); //green
             //theme.SetBaseTheme(MaterialDesignThemes.Wpf.Theme.Dark);
            

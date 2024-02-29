@@ -10,8 +10,9 @@ namespace DotNetTraining.Repositories
         Task SaveUserAsync(User user);
         Task DeleteUserAsync(Guid id);
         Task UpdateUserAsync(User user, Guid userId);
+        Task<User> GetUserByEmailAsync(string email);
 
-       
+
 
 
     }

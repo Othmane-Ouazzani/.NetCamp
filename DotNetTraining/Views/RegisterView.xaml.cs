@@ -1,4 +1,5 @@
-﻿using DotNetTraining.ViewModels;
+﻿using DotNetTraining.Repositories;
+using DotNetTraining.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,11 +20,13 @@ namespace DotNetTraining.Views
     /// Logique d'interaction pour RegisterView.xaml
     /// </summary>
     public partial class RegisterView : Window
+
     {
         public RegisterView()
         {
             InitializeComponent();
-            DataContext = new RegisterViewModel();
+            IUserRepository userRepository = new UserRepository(new Data.UserDbContext());
+            DataContext = new RegisterViewModel(userRepository);
         }
     }
 }

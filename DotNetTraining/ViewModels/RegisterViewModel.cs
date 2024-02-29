@@ -1,8 +1,11 @@
 ﻿using CommunityToolkit.Mvvm.Input;
 using DotNetTraining.Models;
+using DotNetTraining.Repositories;
+using Microsoft.EntityFrameworkCore.Metadata;
 using System.Collections;
 using System.ComponentModel;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 using System.Windows.Input;
 
 namespace DotNetTraining.ViewModels
@@ -19,10 +22,13 @@ namespace DotNetTraining.ViewModels
         public event EventHandler<DataErrorsChangedEventArgs>? ErrorsChanged;
 
         public ICommand RegisterCommand { get; set; }
+        private readonly IUserRepository userRepository;
+        
 
-        public RegisterViewModel()
+        public RegisterViewModel(IUserRepository userRepository)
         {
-            RegisterCommand = new RelayCommand(RegisterUser, CanRegisterUser);
+            RegisterCommand = new RelayCommand(RegisterUser);
+            this.userRepository = userRepository;
         }
 
         public bool IsRegisterEnabled
@@ -37,7 +43,7 @@ namespace DotNetTraining.ViewModels
 
         private void UpdateRegisterButtonState()
         {
-            IsRegisterEnabled = !HasErrors;
+            IsRegisterEnabled = !HasErrors && !string.IsNullOrEmpty(FirstName) && !string.IsNullOrEmpty(LastName) && !string.IsNullOrEmpty(Email) && !string.IsNullOrEmpty(Password);
         }
 
         public bool HasErrors => _errorsByPropertyName.Any();
@@ -94,13 +100,23 @@ namespace DotNetTraining.ViewModels
 
         private void RegisterUser()
         {
+            if(IsUserExists()) {
+                MessageBox.Show("The user already exists.", "User Exists", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+
+            User newUser = new User(new Guid(),FirstName, LastName,BCrypt.Net.BCrypt.HashPassword(Password),Email);
+            userRepository.SaveUserAsync(newUser);
+         
+
 
         }
 
-        private bool CanRegisterUser()
-        {
-            return !string.IsNullOrEmpty(FirstName) && !string.IsNullOrEmpty(LastName) && !string.IsNullOrEmpty(Email) && !string.IsNullOrEmpty(Password);
-        }
+        //private bool CanRegisterUser()
+        //{
+        //    return /*!string.IsNullOrEmpty(FirstName) && !string.IsNullOrEmpty(LastName) && !string.IsNullOrEmpty(Email) && !string.IsNullOrEmpty(Password) &&*/ HasErrors;
+        //}
 
 
 
@@ -181,7 +197,12 @@ namespace DotNetTraining.ViewModels
             }
         }
 
-        //write a function that says hello world
+        private bool IsUserExists()
+        {
+            return userRepository.GetUserByEmailAsync(Email) != null;
+        }
+
+
 
 
 

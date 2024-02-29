@@ -23,6 +23,12 @@ namespace DotNetTraining.Repositories
             }
         }
 
+        public async Task<User> GetUserByEmailAsync(string email)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(x => x.Email.Equals(email));
+            return user;
+        }
+
         public async Task<User> GetUserByIdAsync(Guid id)
         {
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Id.Equals(id));

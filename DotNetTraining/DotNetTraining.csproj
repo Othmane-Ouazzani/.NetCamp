@@ -37,4 +37,8 @@
     <None Include="C:\Users\oouazzanitouhami\source\repos\DotNetTraining\DotNetTraining\.editorconfig" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

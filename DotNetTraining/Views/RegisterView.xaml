@@ -3,18 +3,18 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:DotNetTraining.Helpers"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
-        Title="Registration Page" Height="700" Width="600">
+        Title="Registration Page" Height="800" Width="600">
     <Grid>
         <materialDesign:Card Padding="20" Margin="70" VerticalAlignment="Center" materialDesign:ThemeAssist.Theme="Light" Background="{StaticResource MaterialDesignLightSeparatorBackground}">
             <StackPanel Background="{StaticResource MaterialDesignBackground}">
                 <Border BorderBrush="{DynamicResource PrimaryHueMidBrush}" BorderThickness="2" Margin="30" Padding="10" CornerRadius="30">
                     <TextBlock Text="Register" Style="{StaticResource MaterialDesignHeadline6TextBlock}" HorizontalAlignment="Center" Margin="0 10"/>
                 </Border>
-                <TextBox materialDesign:HintAssist.Hint="First Name" Margin="10 0 10 8" Text="{Binding FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-                <TextBox materialDesign:HintAssist.Hint="Last Name" Margin="10 0 10 8" Text="{Binding LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-                <TextBox materialDesign:HintAssist.Hint="Email" Margin="10 0 10 8" Text="{Binding Email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-                <PasswordBox materialDesign:HintAssist.Hint="Password" Margin="10 0 10 8" local:PasswordHelper.BoundPassword="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-                <Button HorizontalAlignment="Center" Content="Register" Style="{StaticResource MaterialDesignFlatSecondaryDarkBgButton}" Margin="0 0 10 0"/>
+                <TextBox materialDesign:HintAssist.Hint="First Name" Margin="10 20 10 8" Text="{Binding FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox materialDesign:HintAssist.Hint="Last Name" Margin="10 20 10 8" Text="{Binding LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox materialDesign:HintAssist.Hint="Email" Margin="10 20 10 8" Text="{Binding Email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <PasswordBox materialDesign:HintAssist.Hint="Password" Margin="10 20 10 8" local:PasswordHelper.BoundPassword="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <Button HorizontalAlignment="Center" Content="Register" IsEnabled="{Binding IsRegisterEnabled}" Command="{Binding RegisterCommand}" Style="{StaticResource MaterialDesignFlatSecondaryDarkBgButton}" Margin="0 20 10 0"/>
                 <TextBlock HorizontalAlignment="Center" Text="Already have an account? " Margin="0 10"/>
                 <TextBlock HorizontalAlignment="Center" Text="Login here" TextDecorations="Underline" Cursor="Hand" Margin="0 0 0 10"/>
             </StackPanel>
