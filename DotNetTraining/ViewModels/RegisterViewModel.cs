@@ -5,8 +5,12 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using System.Collections;
 using System.ComponentModel;
 using System.Text.RegularExpressions;
+using System.Windows;
 using System.Windows.Forms;
 using System.Windows.Input;
+using System.Windows.Markup;
+using System.Xml;
+using Application = System.Windows.Application;
 
 namespace DotNetTraining.ViewModels
 {
@@ -23,7 +27,19 @@ namespace DotNetTraining.ViewModels
 
         public ICommand RegisterCommand { get; set; }
         private readonly IUserRepository userRepository;
-        
+
+        private ResourceDictionary LoadResourceDictionary(string uri)
+        {
+            // Load the resource dictionary from the provided URI
+            var resourceInfo = Application.GetResourceStream(new Uri(uri));
+            var settings = new XmlReaderSettings { DtdProcessing = DtdProcessing.Parse };
+
+            using (var reader = XmlReader.Create(resourceInfo.Stream, settings))
+            {
+                return (ResourceDictionary)XamlReader.Load(reader);
+            }
+        }
+
 
         public RegisterViewModel(IUserRepository userRepository)
         {
@@ -101,8 +117,13 @@ namespace DotNetTraining.ViewModels
         private void RegisterUser()
         {
             if(IsUserExists()) {
-                MessageBox.Show("The user already exists.", "User Exists", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
+                var defaultsResource = LoadResourceDictionary("pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml");
+
+                // Extract the MaterialDesignRaisedButton style
+                var raisedButtonStyle = defaultsResource["MaterialDesignRaisedButton"] as Style;
+
+                //show a messagebox containing the style
+                System.Windows.MessageBox.Show(raisedButtonStyle.ToString()); return;
             }
 
 

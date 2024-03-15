@@ -92,3 +92,4 @@ C:\Users\Othmane\source\repos\.NetCamp\MaterialDesign\obj\Debug\net8.0-windows\r
 C:\Users\Othmane\source\repos\.NetCamp\MaterialDesign\obj\Debug\net8.0-windows\MaterialDesign.pdb
 C:\Users\Othmane\source\repos\.NetCamp\MaterialDesign\obj\Debug\net8.0-windows\MaterialDesign.genruntimeconfig.cache
 C:\Users\Othmane\source\repos\.NetCamp\MaterialDesign\obj\Debug\net8.0-windows\ref\MaterialDesign.dll
+C:\Users\Othmane\source\repos\.NetCamp\MaterialDesign\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs

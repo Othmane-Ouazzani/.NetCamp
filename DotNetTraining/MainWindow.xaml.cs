@@ -4,10 +4,12 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Markup;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml;
 
 namespace DotNetTraining
 {
@@ -16,13 +18,17 @@ namespace DotNetTraining
     /// </summary>
     public partial class MainWindow : Window
     {
-        //inject IUserRepository
+        //extract 
+
+
 
         public MainWindow()
         {
-            InitializeComponent();
-            
+     
 
+            InitializeComponent();
+
+           
 
 
 
