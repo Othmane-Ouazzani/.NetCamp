@@ -6,20 +6,20 @@
         Title="Page" Height="700" Width="600">
 
     <Window.Resources>
-        <local:ButtonConverter x:Key="StyleConverter"/>
+        <local:GenericConverter x:Key="StyleConverter"/>
     </Window.Resources>
 
     <Grid>
         <materialDesign:Card Padding="20" Margin="70" VerticalAlignment="Center">
             <StackPanel>
-                <TextBlock Text="Welcome" Style="{StaticResource MaterialDesignHeadline6TextBlock}" HorizontalAlignment="Center" Margin="0 40 0 0"/>
+                <TextBlock Text="Welcome"  HorizontalAlignment="Center" Margin="0 40 0 0"/>
                 <TextBox materialDesign:HintAssist.Hint="Username" Margin="0 0 0 8"/>
                 <PasswordBox materialDesign:HintAssist.Hint="Password" Margin="0 0 0 8" Password=""/>
                 <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
                     <Button HorizontalAlignment="Center" Content="Login" Style="{Binding IsMaterialDesign, Converter={StaticResource StyleConverter}}" Margin="0 0 10 0"/>
-                    <Button HorizontalAlignment="Center" Content="Register" Margin="0 10 10 0"/>
+                    <Button HorizontalAlignment="Center"  Content="Register" Style="{StaticResource CustomButtonStyle}" Margin="0 10 10 0"/>
                 </StackPanel>
-                <TextBlock HorizontalAlignment="Center" Text="Don't have an account?" Style="{StaticResource MaterialDesignDataGridTextColumnStyle}" Margin="0 10"/>
+                <TextBlock HorizontalAlignment="Center" Text="Don't have an account?"  Margin="0 10"/>
                 <TextBlock HorizontalAlignment="Center" Text="Register here" TextDecorations="Underline" Cursor="Hand" Margin="0 0 0 10"/>
             </StackPanel>
         </materialDesign:Card>

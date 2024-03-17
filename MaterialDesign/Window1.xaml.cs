@@ -1,4 +1,5 @@
-﻿using MaterialDesignThemes.Wpf;
+﻿using MaterialDesign;
+using MaterialDesignThemes.Wpf;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -64,6 +65,14 @@ namespace MaterialDesign
 
 
             InitializeComponent();
+            var resourcePairs = new Dictionary<string, string>
+        {
+            { "MaterialDesignFlatAccentBgButton", "CustomButtonStyle" },
+            { "MaterialDesignToolButton", "myButton1" }
+        };
+
+            var converter = new GenericConverter(resourcePairs);
+            Resources.Add("MyConverter", converter);
             this.DataContext = this;
 
 

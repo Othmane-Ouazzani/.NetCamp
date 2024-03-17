@@ -20,9 +20,31 @@ namespace MaterialDesign
     /// </summary>
     public partial class validation : Page
     {
+        public List<Person> people { get; set; }
+
         public validation()
         {
             InitializeComponent();
+            people = new List<Person>
+{
+    new Person { Name = "John Doe", Age = 30, Email = "john.doe@example.com", Address = "123 Main St", PhoneNumber = "123-456-7890", DateOfBirth = new DateTime(1991, 1, 1),IsElligebale=true },
+    new Person { Name = "Jane Doe", Age = 28, Email = "jane.doe@example.com", Address = "456 Oak St", PhoneNumber = "987-654-3210", DateOfBirth = new DateTime(1993, 2, 2) ,IsElligebale=false},
+    new Person { Name = "Bob Smith", Age = 35, Email = "bob.smith@example.com", Address = "789 Pine St", PhoneNumber = "456-789-0123", DateOfBirth = new DateTime(1986, 3, 3),IsElligebale=true },
+    new Person { Name = "Alice Johnson", Age = 25, Email = "alice.johnson@example.com", Address = "987 Elm St", PhoneNumber = "789-012-3456", DateOfBirth = new DateTime(1996, 4, 4),IsElligebale=true },
+    new Person { Name = "David Brown", Age = 40, Email = "david.brown@example.com", Address = "654 Birch St", PhoneNumber = "012-345-6789", DateOfBirth = new DateTime(1981, 5, 5) ,IsElligebale=false}
+};
+
+            this.DataContext = this;
         }
+    }
+    public class Person
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public string Email { get; set; }
+        public string Address { get; set; }
+        public string PhoneNumber { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public bool IsElligebale { get; set; }
     }
 }

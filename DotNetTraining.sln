@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetTraining", "DotNetTraining\DotNetTraining.csproj", "{0C68CF06-BE13-4AE9-B5EC-A5B38527376B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialDesign", "MaterialDesign\MaterialDesign.csproj", "{7963CAAB-8B60-4682-838E-399743C0433D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaterialDesign", "MaterialDesign\MaterialDesign.csproj", "{7963CAAB-8B60-4682-838E-399743C0433D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

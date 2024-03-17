@@ -1,19 +1,28 @@
 {
   "version": 2,
-  "dgSpecHash": "6sYJcaiPKbWXbcA5F3/vY+/76YV31xjXsoNH/Z3ogSrJ+Mrl2dxcdcX6z2HJfSGGSkhkuaneBO1Rp90DRhVXnA==",
+  "dgSpecHash": "DBbmpjjmOCfCVGO8FMFjZgfCkrK2DCe4Smfb+zhqh0BzOuolvOeDiWTanxV5gGOyIzBKfBUGD0mJcpQetFxDzg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Othmane\\source\\repos\\.NetCamp\\MaterialDesign\\MaterialDesign.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Othmane\\.nuget\\packages\\avalonia\\11.0.9\\avalonia.11.0.9.nupkg.sha512",
-    "C:\\Users\\Othmane\\.nuget\\packages\\avalonia.buildservices\\0.0.29\\avalonia.buildservices.0.0.29.nupkg.sha512",
-    "C:\\Users\\Othmane\\.nuget\\packages\\avalonia.remote.protocol\\11.0.9\\avalonia.remote.protocol.11.0.9.nupkg.sha512",
+    "C:\\Users\\Othmane\\.nuget\\packages\\autofilterdatagrid\\1.0.21221.1631\\autofilterdatagrid.1.0.21221.1631.nupkg.sha512",
+    "C:\\Users\\Othmane\\.nuget\\packages\\datagridextensions\\2.6.0\\datagridextensions.2.6.0.nupkg.sha512",
+    "C:\\Users\\Othmane\\.nuget\\packages\\filterdatagrid\\1.2.8\\filterdatagrid.1.2.8.nupkg.sha512",
     "C:\\Users\\Othmane\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
     "C:\\Users\\Othmane\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
-    "C:\\Users\\Othmane\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
-    "C:\\Users\\Othmane\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\Othmane\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512",
     "C:\\Users\\Othmane\\.nuget\\packages\\showmethexaml\\2.0.0\\showmethexaml.2.0.0.nupkg.sha512",
-    "C:\\Users\\Othmane\\.nuget\\packages\\showmethexaml.msbuild\\2.0.0\\showmethexaml.msbuild.2.0.0.nupkg.sha512",
-    "C:\\Users\\Othmane\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512"
+    "C:\\Users\\Othmane\\.nuget\\packages\\showmethexaml.msbuild\\2.0.0\\showmethexaml.msbuild.2.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AutoFilterDataGrid 1.0.21221.1631' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AutoFilterDataGrid",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
 }

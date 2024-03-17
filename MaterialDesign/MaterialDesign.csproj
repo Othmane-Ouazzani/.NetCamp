@@ -9,7 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="11.0.9" />
+    <PackageReference Include="AutoFilterDataGrid" Version="1.0.21221.1631" />
+    <PackageReference Include="DataGridExtensions" Version="2.6.0" />
+    <PackageReference Include="FilterDataGrid" Version="1.2.8" />
     <PackageReference Include="MaterialDesignColors" Version="2.1.4" />
     <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
     <PackageReference Include="ShowMeTheXAML.MSBuild" Version="2.0.0" />
