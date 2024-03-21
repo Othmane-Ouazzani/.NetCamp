@@ -5,9 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MaterialDesign"
         mc:Ignorable="d"
-        Title="Test" Height="450" Width="800">
-    <Grid>
-        <Button  Content="Button 1" Style="{StaticResource CustomButtonStyle}"  Margin="234,182,499,223" RenderTransformOrigin="0.79,0.981" />
-        <Button  Content="Button 2" Style="{StaticResource myButton1}"  Margin="381,181,0,223"/>
+        Title="Test" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,46,0">
+        <ToggleButton x:Name="ToggleButton" Margin="347,68,373,-68" Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked" Width="100" Height="30"></ToggleButton>
+        <Button x:Name="Button1" Content="Button1" Style="{StaticResource CustomButtonStyle}"  Margin="343,68,304,337" RenderTransformOrigin="0.79,0.981" Width="100" Height="30" />
+        <Button  x:Name="Button2" Content="Button2" Style="{StaticResource myButton1}"  Margin="343,187,0,217" Width="100" Height="30"/>
     </Grid>
 </Window>
